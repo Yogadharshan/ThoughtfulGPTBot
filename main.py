@@ -10,8 +10,8 @@ TWITTER_ACCESS_TOKEN = ""
 TWITTER_ACCESS_TOKEN_SECRET = ""
 TWITTER_BEARER_TOKEN = ""
 
-open_api_key = ""
-openai.api_key = open_api_key
+OPENAI_API_KEY = ""
+openai.api_key = OPENAI_API_KEY
 client = tweepy.Client(
     consumer_key=TWITTER_API_KEY,
     consumer_secret=TWITTER_API_SECRET,
