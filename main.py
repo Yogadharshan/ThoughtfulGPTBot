@@ -2,6 +2,7 @@ import tweepy, openai
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
 import time
+import schedule
 
 TWITTER_API_KEY = ""
 TWITTER_API_SECRET = ""
@@ -45,10 +46,12 @@ class ThoughtfulGPT():
         """,max_tokens=200)
         
         return response
-bot = ThoughtfulGPT()
-response = bot.generate_tweet()
-
-tweet = response.choices[0].text
-client.create_tweet(text=tweet)
-time.sleep(60 * 20)
-print("successfully tweeted")
+def geeks():
+    bot = ThoughtfulGPT()
+    response = bot.generate_tweet()
+    tweet = response.choices[0].text
+    client.create_tweet(text=tweet)
+    print("successfully tweeted")
+    time.sleep(60 * 20) 
+    
+schedule.every(10).minutes.do(geeks)
