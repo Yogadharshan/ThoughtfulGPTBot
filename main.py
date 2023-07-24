@@ -41,6 +41,7 @@ class ThoughtfulGPT():
             - Do respond with emojis
             
             RESPONSE CONTENT:
+            - Do not respond with already tweeted quotes
             - Only tweet quotes that are very motivation and uplifting
             - If you don't have an answer for the prompt. respond with "None of your Business, Just start you hustle🦁"
         """,max_tokens=200)
