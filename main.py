@@ -3,13 +3,13 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
 import time
 
-TWITTER_API_KEY = "3aRq6aPrFfmFlEY46mbJV5bLc"
-TWITTER_API_SECRET = "eqaiLbbG9CJv2DjBH7R02LniHkLrxB8ijJEpGVLxmVl6s6sHpj"
-TWITTER_ACCESS_TOKEN = "1682950598529015811-SwpPC2tkMg7XEpmIIf55gh70FCkCFI"
-TWITTER_ACCESS_TOKEN_SECRET = "junQn4orAXNmLjFJJCVE7jRSrLOxPhnGZwxyotNlV2TwG"
-TWITTER_BEARER_TOKEN = r"AAAAAAAAAAAAAAAAAAAAAHHbowEAAAAAjiHxoPY3VOAfbgC1sj6bSCEyF1w%3Ddw7Oeosoxy1MWlJFzcuMQEFhAC9HNr2D6WRjZRmF9Np84eCNeZ"
+TWITTER_API_KEY = ""
+TWITTER_API_SECRET = ""
+TWITTER_ACCESS_TOKEN = ""
+TWITTER_ACCESS_TOKEN_SECRET = ""
+TWITTER_BEARER_TOKEN = ""
 
-openai.api_key = "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"
+openai.api_key = ""
 
 client = tweepy.Client(
     consumer_key=TWITTER_API_KEY,
