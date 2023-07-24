@@ -54,4 +54,8 @@ def geeks():
     print("successfully tweeted")
     time.sleep(60 * 20) 
     
-schedule.every(10).minutes.do(geeks)
+while True:
+    geeks()
+    schedule.every().hour.do(geeks)
+    print("running after 60 minutes")
+    time.sleep(60)
